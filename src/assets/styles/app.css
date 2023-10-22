@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* For Webkit (Chrome, Safari, newer versions of Opera) */
+::-webkit-scrollbar {
+    width: 0.4em; /* width of the scrollbar */
+    height: 0.4em;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #ff904c; /* color of the thumb (scrollbar handle) */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* color of the track (background behind the thumb) */
+  }
+  
+
+h1, h2, h3, h4, h5, h6, p, img {
+    user-select: none;
+}
+
+button{cursor: pointer;}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/***/
+.main-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+.login-register-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #475334;
+}
+
+.header-and-main-content-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.header-section{
+    width: 100%;
+    height: 8%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+}
+
+.main-content-section{
+    width: 100%;
+    height: 92%;
+}
+
+@media(max-height: 500px){
+    .header-section{
+        height: 18%;
+    }
+    .main-content-section{
+        min-height: 83%;
+    }
+}
+
+@media(max-width:930px){
+    ::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+      }
+}
+

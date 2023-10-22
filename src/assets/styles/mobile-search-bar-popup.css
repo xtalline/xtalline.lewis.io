@@ -1,0 +1,89 @@
+.mobile-search{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: none;
+}
+
+
+.mobile-search-bar-container{
+    width: 100%;
+    height: 8%;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffffff;
+}
+
+.mobile-search-bar{
+    height: 65%;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10vw;
+    border: 1px solid #475334;
+    background-color: #f6f6f6;
+}
+    .mobile-search-bar > .mobile-search-ic{
+        color: #909090;
+        font-size: calc(1rem + 1vw);
+    }
+    .mobile-search-bar > input[type="search"]{
+        background-color: transparent;
+        width: 80%;
+        height: 80%;
+        font-size: calc(1rem + .2vh);
+    }
+    .mobile-search-bar > input[type="search"]:focus{
+        outline: none;
+    }
+    .mobile-search-bar > input[type="search"]::-webkit-search-cancel-button,
+    .mobile-search-bar > input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+.back-button-container, .clear-button-container{
+    height: 65%;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .back-button-container > button, .clear-button-container > button {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 2vw;
+        background-color: transparent;
+    }
+        .back-button-ic, .clear-button-ic{
+            color: #475334;
+            font-size: calc(1.4rem + 1vw);
+        }
+
+@media(max-width: 930px) {
+    .mobile-search{
+        display: flex;
+    }
+    .mobile-search-bar-container{
+        display: flex;
+    }
+}
+@media(max-height: 500px){
+    .mobile-search{
+        display: flex;
+    }
+    .mobile-search-bar-container{
+        height: 18%;
+    }
+}

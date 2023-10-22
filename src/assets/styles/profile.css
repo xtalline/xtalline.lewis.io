@@ -1,0 +1,651 @@
+.profile-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+}
+    .profile-left-container, .profile-right-container{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    /********************************/
+    .profile-left-container{
+        width: 25%;
+    }
+        .profile-top-left-container{
+            width: 100%;
+            height: 33%;
+            padding: 20px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+          }
+            .profile-img-wrapper{
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .profile-img-wrapper > img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                border-radius: 8px;
+            }
+        
+        .profile-middle-left-container{
+            width: 100%;
+            height: 55%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+            .identity-number {
+                height: 12%;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                color: #475334;
+            }
+                .identity-number >h4{
+                font-weight: 500;
+                font-size: 1.5em;
+                }
+            .profile-navigation-wrapper{
+                height: 88%;
+                width: 100%;
+                margin: 20px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                
+            }               
+                .profile-navigation-wrapper > button{
+                    width: 100%;
+                    padding: 20px 50px;
+                    font-size: 1rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background-color: transparent;
+                    border-radius: 4px;
+                    margin-top: 4px;
+                }
+                .profile-navigation-wrapper > button:hover{
+                    background-color: #ecececc4;
+                }
+                .profile-navigation-ic{
+                    font-size: 1.5rem;
+                    padding: 2px;
+                    border-radius: 100%;
+                    border: 2px solid #ff6584;
+                    color: #ff6584;
+                }
+                /*Active Navigation Button*/
+                .profile-navigation-wrapper > .active-nav{
+                    background-color: #ecececc4;
+                }
+                /**/
+
+        .profile-bottom-left-container{
+            display: flex;
+            width: 100%;
+            height: 12%;
+            padding: 10px 85px;
+            justify-content: center;
+        }
+            .profile-bottom-left-container > button{
+                height: 100%;
+                padding: 10px 40px;
+                font-size: .8rem;
+                border-radius: 5px; 
+                background-color: #ff6584;
+                color: #ffffff;
+                font-weight: 700;
+                transition: background-color 0.3s ease-in-out;               
+            }
+            .profile-bottom-left-container > button:hover{
+                background-color: #c84d65;
+              }
+
+    /********************************/
+    .profile-right-container{
+        width: 50%;
+        padding: 30px;
+    }
+        .mobile-img-wrapper{
+            height: 100px;
+            width: 100px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .mobile-img-wrapper > img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        .profile-details-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /*****Profile Details*******/
+        .profile-details-wrapper{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .profile-details-header{
+            height: max-content;
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            justify-content: space-between;
+        }
+            .profile-details-header > h2{
+                height: 80%;
+                padding: 10px 0;
+                display: flex;
+                justify-content: center;
+            }
+            .profile-details-header > .profile-edit-save-btn{
+                height: 40px;
+                width: 40px;
+                background-color: #475334;
+                border-radius: 100%;
+                color: #FFFFFF;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+              }
+            
+
+        .profile-details{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+            .profile-details > form,
+            .profile-details > .details{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            } 
+            .profile-details > form > label,
+            .profile-details > .details > label {
+                font-size: .8rem;
+                margin: 10px 0 2px 2px;
+                font-weight: 500;
+                color: #c84d65;
+            }
+
+        .profile-details > form > input[type="text"],
+        .profile-details > form > input[type="email"],
+        .profile-details > form > input[type="password"]{
+          font-size: 1rem;
+          padding: 10px;
+          margin-bottom: 10px;
+          border-radius: 5px;
+          border: 1px solid #000000;
+          font-family: 'Inter', sans-serif;   
+        }
+
+        .bday-picker{
+            width: 100%;
+            display: flex;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            background-color: #FFFFFF;
+          }
+            .bday-picker > input[type="date"]{
+              width: 100%;
+              height: 100%;
+              background-color: transparent;
+              padding:10px;
+              display: flex;
+              justify-content: space-between;
+              font-size: 1rem;
+              border-radius: 5px;
+              font-family: 'Inter', sans-serif; 
+              border: 1px solid #000000;
+            }
+  
+        .gender-selector{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+            .gender-selector > label {
+                width: 32%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 8px;
+                border-radius: 5px;
+                border: 1px solid #000000;
+                margin-bottom: 10px;
+            }
+            .others{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .others > input[type="text"]{
+                    font-size: 1rem;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;                
+                    background-color: #FFFFFF;
+                    border: 1px solid #000000;
+                    width: 100%;
+                }
+
+
+        .details > label {
+            font-size: .8rem;
+            margin: 10px 0 2px 2px;
+            font-weight: 500;
+            color: #c84d65;
+        }
+        .details > label > span {
+            color: #777777;
+        }
+    
+        .details > input[type="text"],
+        .details > input[type="email"],
+        .details > input[type="password"]{
+            font-size: 1rem;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #cbcbcbe5;
+            font-family: 'Inter', sans-serif;   
+        }
+        
+
+        /*Account credentials*/
+        .acc-settings-header{
+            width: 100%;
+            text-align: center;
+        }
+        .email-wrapper{
+            display: flex;
+            width: 100%;
+            padding: 10px;
+            justify-content: space-between;
+            border: 1px solid #cbcbcbe5;       
+            border-radius: 5px;
+            background-color: #fafafa;
+        }
+            .email-wrapper > input[type="email"]{
+                font-size: 1rem;
+                width: 85%;
+                border-radius: 5px;
+                font-family: 'Inter', sans-serif;
+                background-color: #fafafa;
+            }
+            .email-wrapper > .email-verification-badge{
+                margin-left: 10px;
+                font-size: 1rem;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Inter', sans-serif;
+                background-color: #fafafa;
+            }
+            .email-wrapper > .email-verification-badge.verified{
+                color: #c84d65;
+            }
+            .email-wrapper > .email-verification-badge.not-verified{
+                color: #777777;
+            }
+    
+            .ch-pw{
+                width: 100%;
+                padding: 10px;
+                font-size: 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                border-radius: 5px;        
+            }
+            .ch-pw > p {
+                width: max-content;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .ch-pw > p > .key-ic {
+                margin-left: 10px;
+            }
+            .ch-pw > .ch-pw-ic {
+                color: #475334;
+            }
+            .ch-pw-dropdown{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 5px;      
+                background-color: #f0f0f0;
+                padding: 20px;
+            }
+            .ch-pw-dropdown > form{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 15px 30px;
+            }
+                .ch-pw-dropdown > form > input[type="password"]{
+                    font-size: 1rem;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                    border-radius: 5px;
+                    border: 1px solid #000000;
+                    font-family: 'Inter', sans-serif;   
+                }
+                .ch-pw-dropdown > form > label{
+                    font-size: .8rem;
+                    margin: 5px 0 2px 2px;
+                    font-weight: 500;
+                    color: #475334;
+                }
+                .ch-pw-dropdown > button {
+                    padding: 20px;
+                    font-size: .8rem;
+                    font-weight: 600;
+                    color: #ffffff;
+                    border-radius: 5px;
+                    background-color: #475334;
+                }
+            
+    
+            .request-wrapper{
+                width: 100%;
+                height: max-content;
+                display: flex;
+                align-items: center;
+            }
+            .request-wrapper > p {
+                margin: 0 5px 0 30px;
+                font-size: .85rem;
+                font-weight: 400;
+                color: #7d7d7d;
+                display: flex;
+                align-items: center;
+            }
+            .request-wrapper > p > button {
+                background-color: transparent;
+                color: #000000;
+                display: flex;
+                align-items: center;
+            }
+                .request-wrapper > p > button:hover{
+                color: #c84d65;
+                }
+            .request-wrapper > button:nth-of-type(1) {
+                font-size: .7rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                
+                padding: 20px;
+                border-radius: 5px;
+                background-color: #1778f2;
+                background-color: #475334;
+                color: #FFFFFF;
+            }
+
+            .request-verification-info{
+                font-size: .8rem;
+                width: 100%;
+                padding: 10px;
+                border-radius: 5px;
+                border: 1px solid #cbcbcbe5;
+                margin-top: 10px; 
+                color: #7d7d7d;
+            }
+    
+            .verification-details{
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                color: #777777;
+                font-size: .9rem;
+                border: 1px solid #cbcbcbe5;       
+                border-radius: 5px;
+                background-color: #fafafa;
+
+            }
+                .verification-id{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 5px;
+                    margin: 0 10px;
+                    user-select: all;
+                }
+         
+        /*Schedule*/
+        .schedule-container-item{
+            width: 100%;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            border: 1px solid #000000;
+            margin: 5px 0;
+        }
+            .schedule-details-header{
+                width: 100%;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                box-shadow: 0px 3px 5px -2px rgba(0, 0, 0, 0.2);
+                background-color: #FFFFFF;
+            }
+                .schedule-details-header > h3 {
+                    text-transform: uppercase;
+                    letter-spacing: .3rem;
+                }
+                .schedule-details-header > button{
+                    font-size: 1rem;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    color: #475334;
+                    font-weight: 600;
+                }
+                    .schedule-details-header > button:hover{
+                        background-color: #475334;
+                        color: #FFFFFF;
+                    }
+
+            .schedule-details-body{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+            }
+                .schedule-detail-item{
+                    width: 100%;
+                    min-height: 80px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 10px;
+                    margin-bottom: 5px;
+                    border-bottom: 1px solid #aaaaaa;
+                }
+                    .schedule-details{
+                        display: flex;
+                        flex-direction: column;
+                        width: max-content;
+                        color: #646464;
+                    }
+                    .schedule-details > h6 {
+                        font-size: .9rem;
+                    }
+                    .schedule-details > p {
+                        font-size: .8rem;
+                    }
+
+                .schedule-edit-delete-btn{
+                    display: flex;
+                    font-size: 1.2rem;
+                }   
+                    .schedule-edit-delete-btn-ic{
+                        background-color: #ecececc4;
+                        padding: 5px;
+                        width: 25px;
+                        height: 25px;
+                        border-radius: 5px;
+                        margin-left: 10px;
+                    }
+
+                    .edit:hover{
+                        background-color: #475334;
+                        color: #FFFFFF;
+                    }
+                    .delete:hover{
+                        background-color: crimson;
+                        color: #FFFFFF;
+                    }
+/*****************************************************************/
+
+
+@media(max-width:1400px){
+    .profile-left-container{
+        width: 35%;
+    }
+    .profile-right-container{
+        width: 55%;
+    }
+    .verification-details{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .verification-id{
+        justify-content: flex-start;
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+        font-size: calc(.85rem + .2vw);
+    }
+}
+@media(max-width:930px){
+    .profile-container{
+        padding:15px 10px;
+    }
+    .profile-left-container {
+        display: none;
+    }
+    .profile-right-container{
+        width: 100%;
+        padding: 5px;
+    }
+    .mobile-img-wrapper{
+        display: flex;
+    }
+
+    .profile-details-header > h2{
+        font-size: 1rem;
+    }
+
+    .profile-details-header > .profile-edit-save-btn{
+        height: 30px;
+        width: 30px;
+    }
+
+    .gender-selector{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .gender-selector > label{
+        width: 100%;
+    }
+
+    /*Account settings*/
+    .ch-pw-dropdown{
+        padding: 20px 10px;
+    }
+    .ch-pw-dropdown > form{
+        padding: 10px;
+    }
+
+    .request-wrapper{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .request-wrapper > p {
+        margin: 12px 0;
+    }
+    .request-wrapper > button:nth-of-type(2){
+        padding: 0 ;
+    }
+
+    .account-status{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .account-status > span {
+        font-size: .75rem;
+    }
+    .verification-details{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .verification-id{
+        width: 100%;
+        margin: 0;
+        margin-top: 10px;
+        font-size: calc(.75rem + .2vw);
+    }
+
+    /*Schedule*/
+    .schedule-details-header > h3{
+        font-size: .9rem;
+    }
+
+}
+@media(max-height:500px) {
+    .profile-container{
+        overflow-y: auto;
+        overflow-x: hidden; 
+    }
+    .profile-left-container,
+    .profile-right-container{
+        height: max-content;
+    }
+
+    .profile-bottom-left-container > button{
+        padding: 20px 40px;
+    }
+    
+    .profile-navigation-wrapper,
+    .profile-details{
+        overflow: hidden;
+    }
+}
+

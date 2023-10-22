@@ -1,0 +1,197 @@
+.navigation-container{
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    max-height: 60%;
+    border-radius: .5vw;
+
+    top: 8%;
+    right: 2%;
+    display: flex;
+    z-index: 5;
+
+    padding: 1%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .navigation-profile-container{
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: .5vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:  4%;
+        cursor: pointer;
+    }
+        .navigation-profile-container:hover{
+            background-color: #eeeeee;
+        }
+        .navigation-profile-image {
+            height: 100%;
+            width: 20%;
+            border-radius: 100vw;
+            display: flex;
+            align-items: center;
+        }
+            .navigation-profile-image > img{
+                width: 70%;
+                border-radius: 100vw;
+            }
+
+        .navigation-profile-details{
+            width: 83%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2% 0;
+        }
+            .navigation-profile-details > h4{
+                font-size: .95rem;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            .navigation-profile-details > p{
+                font-size: .9rem
+            }
+
+    .navigation-buttons{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 63%;
+        margin-top: 1%;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+    }
+        .navigation-buttons > button{
+            display: flex;
+            width: 100%;
+            padding: 12px;
+            align-items: center;
+            background-color: transparent;
+            border-radius: .5vw;
+        }
+
+        .navigation-buttons > button:hover{
+            background-color: #eeeeee;
+        }
+
+            .navigation-button-ic{
+                font-size: 1.8rem;
+                background-color: #d9dad7;
+                border-radius: 20%;
+                color: #090909;
+                padding: 6px;
+            }
+            .navigation-buttons > button > p{
+                font-size: .9rem;
+                font-weight: 600;
+                width: 80%;
+                display: flex;
+                padding: 3% 5%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+                .logout-p{
+                    width: 88%;
+                }
+            .navigation-button-forward-ic{
+                color: #7c7c7c;
+                font-size: 1.2rem;
+                width: 10%;
+                
+            }
+            
+            /*Active Navigation*/
+            .navigation-buttons > .active-nav{
+                background-color: #eeeeee;
+            }
+
+
+/*mobile*/
+.navigation-overlay-mobile{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display:none;
+    justify-content: flex-end;
+    z-index: 5;
+
+    transition: transform 2s;
+}
+
+
+
+.navigation-container-mobile{
+    background-color: #ffffff;
+    width: 80%;
+    height: 100%;
+    animation: ease-in-out 3s;
+
+    display: none;
+    flex-direction: column;
+}
+
+.navigation-closer{
+    width: 100%;
+    padding: 5%;
+    display: flex;
+}
+
+.navigation-closer-ic{
+    font-size: calc(1rem + 1vw);
+    color: #475334;
+}
+
+
+/*for larger screen navigation dropdown adjusts*/
+@media (max-width: 1200px){
+    .navigation-container{
+        width: 35%;
+    }     
+
+}
+
+/*Navigation for mobile*/
+@media (max-width: 930px) {
+    .navigation-container{
+        display: none;
+    }
+    .navigation-overlay-mobile{
+        display: flex;
+        background-color: #55555560;
+    }
+    .navigation-container-mobile{
+        display: flex;
+    }
+    .navigation-profile-container{
+        box-shadow: none;
+        padding: 3% 6%;
+        border-bottom: 1px solid #eeeeee;
+    }
+    .navigation-buttons{
+        padding: 4%;
+    }
+    .navigation-buttons > button > p{
+        font-weight: 400;
+    }
+}
+
+@media (max-height: 500px) {
+    .navigation-container{
+        top: 16%;
+    }
+}

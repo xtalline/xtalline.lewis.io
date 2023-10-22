@@ -1,0 +1,146 @@
+[
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marcayda",
+        "roomNumber": "R301",
+        "roomName": "Speech Lab",
+        "activityName": "Class",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "free",
+        "name": "Hamodi Marandang",
+        "roomNumber": "R103",
+        "roomName": "Faculty Room",
+        "activityName": "Vacant",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marandang",
+        "roomNumber": "R101",
+        "roomName": "Dean's Office",
+        "activityName": "Meeting",
+        "departmentName": "DTE"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marcayda",
+        "roomNumber": "R301",
+        "roomName": "Speech Lab",
+        "activityName": "Class",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "free",
+        "name": "Hamodi Marandang",
+        "roomNumber": "R103",
+        "roomName": "Faculty Room",
+        "activityName": "Vacant",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "free",
+        "name": "Cristalyn Joy Marcayda",
+        "roomNumber": "R301",
+        "roomName": "Speech Lab",
+        "activityName": "Vacant",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "free",
+        "name": "Hamodi Marandang",
+        "roomNumber": "R107",
+        "roomName": "Faculty Room",
+        "activityName": "Vacant",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marandang",
+        "roomNumber": "R101",
+        "roomName": "Dean's Office",
+        "activityName": "In Meeting",
+        "departmentName": "DTE"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marcayda",
+        "roomNumber": "R301",
+        "roomName": "Speech Lab",
+        "activityName": "In Class",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marcayda",
+        "roomNumber": "R301",
+        "roomName": "Speech Lab",
+        "activityName": "Class",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "free",
+        "name": "Hamodi Marandang",
+        "roomNumber": "R103",
+        "roomName": "Faculty Room",
+        "activityName": "Vacant",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marandang",
+        "roomNumber": "R101",
+        "roomName": "Dean's Office",
+        "activityName": "Meeting",
+        "departmentName": "DTE"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marcayda",
+        "roomNumber": "R301",
+        "roomName": "Speech Lab",
+        "activityName": "Class",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "free",
+        "name": "Hamodi Marandang",
+        "roomNumber": "R103",
+        "roomName": "Faculty Room",
+        "activityName": "Vacant",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "free",
+        "name": "Cristalyn Joy Marcayda",
+        "roomNumber": "R301",
+        "roomName": "Speech Lab",
+        "activityName": "Vacant",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "free",
+        "name": "Hamodi Marandang",
+        "roomNumber": "R107",
+        "roomName": "Faculty Room",
+        "activityName": "Vacant",
+        "departmentName": "DIIT"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marandang",
+        "roomNumber": "R101",
+        "roomName": "Dean's Office",
+        "activityName": "In Meeting",
+        "departmentName": "DTE"
+    },
+    {
+        "status": "busy",
+        "name": "Cristalyn Joy Marcayda",
+        "roomNumber": "R301",
+        "roomName": "Speech Lab",
+        "activityName": "In Class",
+        "departmentName": "DICT"
+    }
+]

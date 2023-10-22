@@ -1,0 +1,252 @@
+.popup-container-overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 15px;
+    background-color: #55555598;
+}
+.popup-container{
+    background-color: #FFFFFF;
+    width: 40%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+    .popup-container > .popup-header{
+        font-size: 1rem;
+        color: #475334;
+    }
+
+    .popup-btn{
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        padding-bottom: 5px;
+        align-items: center;
+        justify-content: center;
+    }
+        .popup-btn > button{
+            padding: 15px;
+            margin: 0 12px;
+            width: 100px;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        .popup-btn > :nth-child(1){
+            color: #FFFFFF;
+            background-color: #475334;
+        }
+        .popup-btn > :nth-child(2){
+            color: #475334;
+        }
+        .popup-btn > button:hover{
+            background-color: #ff904c;
+            color: #ffffff;
+        }
+
+/*WhereaboutsDetailsPopUp.js*/
+.department-logo-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+.department-logo{
+    width: 20%;
+}
+.department-logo > img{
+    width: 80%;
+}
+.whereabouts-details-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+    .whereabouts-details-container > h2{
+        color: #475334;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .whereabouts-details-container > p{
+        font-style: italic;
+        color: #787878;
+        font-size: .8rem;
+        text-align: center;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .whereabouts-details{
+        margin-top: 24px;
+        margin-bottom: 10px;
+        max-width: 98%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+        .whereabouts-details-table{
+            border-collapse: collapse;
+            white-space: nowrap;
+        }
+
+        .whereabouts-details-table > .whereabouts-details-table-body > tr > td{
+            width: max-content;
+            padding: 12px;
+            color: #000000;
+            background-color: transparent;
+            font-size: 1rem;
+        }
+
+        .whereabouts-details-table > .whereabouts-details-table-body > tr > td:nth-of-type(1){
+            font-weight: 600;
+        }
+
+        .whereabouts-details-table > .whereabouts-details-table-body > tr > td:nth-of-type(2){
+            padding: 12px 20px;
+        }
+        
+
+
+/*ScheduleModifier.js*/
+.schedule-modifier-container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.schedule-modifier{
+    display: flex;
+    width: 100%;
+    padding: 15px 0;
+    flex-direction: column;
+}
+.schedule-title, .location, .schedule-notes{
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    margin-bottom: 10px;
+    border: 1px solid #cbcbcb;
+    border-radius: 5px;
+}
+    .schedule-notes{
+        font-family: 'Inter', sans-serif;
+        min-height: 50px;
+        max-height: 150px;
+        resize: vertical;
+        overflow-y: auto;
+    }
+    .schedule-modifier > label {
+        font-size: .8rem;
+        font-weight: 600;
+        color: #c84d65;
+    }
+.schedule-time-picker{
+    display: flex;
+    width: 100%;
+    background-color: #eeeeee;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+.timepicker{
+    width: 49%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+/*loading*/
+/*one-click-overlay*/
+.one-click-overlay{
+    position: fixed;
+    z-index: 10;
+    background: rgba(49, 49, 49, 0.699);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+
+@media(max-width:1400px){
+    .popup-container{
+        width: 50%;
+    }
+}
+@media(max-width:930px){
+    .popup-container{
+        width: 90%;
+    }
+    .popup-container > .popup-header{
+        font-size: 0.8rem;
+    }
+
+
+    /*ScheduleModifier.js*/
+    .schedule-time-picker{
+        flex-direction: column;
+    }
+    .timepicker{
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /*WhereaboutsDetailsPopUp.js*/
+    .whereabouts-details-container > h2 {
+        font-size: 1.1rem;
+    }
+    .whereabouts-details-table > .whereabouts-details-table-body > tr > td{
+        font-size: .9rem;
+    }
+    .whereabouts-details{
+        overflow-y: auto ;
+    }
+}
+
+@media (max-height: 550px) {
+    .popup-container-overlay{
+        align-items: flex-start;
+        padding: 15px 0;
+    }
+    .popup-container{
+        height: max-content;
+    }
+}
+
+@media (max-width:300px){
+    .popup-container{
+        width: max-content;
+        overflow-x: auto;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .popup-header{
+        width: max-content;
+    }
+    .department-logo-container{
+        display: none;
+    }
+    .whereabouts-details-container > p {
+        display: inline;
+    }
+}

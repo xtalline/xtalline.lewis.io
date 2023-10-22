@@ -1,0 +1,160 @@
+.header-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-left-content{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2px 15px;
+}
+    .header-left-content > img {
+        height: 75%;
+        cursor: pointer;
+    }
+
+/*For search bar (PC screen size) or app name (mobile screen size)*/
+.header-middle-content{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    /*search bar for pc*/
+    .header-middle-content > .search-bar{
+        width: 40%;
+        height: 70%;
+        border-radius: 10vw;
+        border: 1px solid #475334;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .search-ic{
+        color: #475334;
+        font-size: 1rem;
+    }
+    input[type="search"]{
+        background-color: transparent;
+        width: 80%;
+        height: 80%;
+        font-size: calc(1rem + .2vh);
+    }
+    input[type="search"]:focus{
+        outline: none;
+    }
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-decoration {
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    /*app name for mobile*/
+    .header-middle-content > h1{
+        font-size: calc(1.3rem + 1.5vw);
+        letter-spacing: .3rem;
+        color: #475334;
+        display: none;
+        height: 85%;
+        width: 100%;
+        align-items: center;
+    }
+
+
+.header-right-content{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2px 15px;
+}
+    .header-right-content > .search-ic-mobile{
+        height: 50%;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+        .search-ic-mobile > img{
+            height: 100%;
+            cursor: pointer;
+        }
+    .header-right-content > .notification-icon{
+        border-radius: 100vw;
+        height: 65%;
+        margin-left: 12px;
+    }
+        .notification-icon > img {
+            border-radius: 100vw;
+            height: 100%;
+            cursor: pointer;
+        }
+    
+    .header-right-content > .profile-avatar{
+        border-radius: 100vw;
+        height: 65%;
+        margin-left: 12px;
+    }    
+        .profile-avatar > img {
+            border-radius: 100vw;
+            height: 100%;
+            cursor: pointer;
+        }
+
+
+
+
+@media (max-width: 930px) {
+    @media (orientation:portrait){
+        .header-left-content{
+            width: 20%;
+        }
+        .header-middle-content{
+            justify-content: flex-start;
+            width: 40%;
+        }
+        .header-right-content{
+            width: 40%;
+        }
+            
+    }
+    @media(orientation:landscape){
+        .header-left-content{
+            width: 25%;
+        }
+        .header-middle-content{
+            justify-content: flex-start;
+            width: 50%;
+        }
+        .header-right-content{
+            height: 100%;
+            width: 25%;
+        }
+    }
+
+    .header-left-content > img {
+        height: 60%;
+        cursor: none;
+    }
+    .header-middle-content > .search-bar{
+        display: none;
+    }
+    .header-middle-content > h1{
+        display: flex;
+    }
+    .header-right-content > .profile-avatar {
+        height: 60%;
+    }
+    .header-right-content > .notification-icon{
+        height: 60%;
+    }
+    .header-right-content > .search-ic-mobile{
+        display: flex;
+    }
+    
+}
